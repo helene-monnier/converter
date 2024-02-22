@@ -1,0 +1,13 @@
+@use 'reset';
+@use 'variables' as v;
+@use 'fonts';
+
+body {
+  background-color: v.$color-bg;
+  font-weight: 300;
+  color: v.$color;
+  font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+}
+
+
+

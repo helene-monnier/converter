@@ -1,0 +1,22 @@
+@use '../../styles/variables' as v;
+
+.result {
+  background-color: v.$color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: v.$color-primary;
+  height: 25vh;
+
+  &__number{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__currency{
+    font-size: 1.3rem;
+    font-weight: 200;
+
+  }
+}

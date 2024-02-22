@@ -1,0 +1,50 @@
+@use '../../styles/variables' as v;
+
+.currenciesList {
+  background-color: v.$color;
+  flex-grow: 1;
+  color: v.$color-primary;
+  height: 50vh;
+  padding: 20px;
+
+  &__title {
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 1em
+  }
+
+  &__ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    max-height: 40vh;
+    overflow: auto;
+  }
+
+  &__li{
+    background-color: v.$color;
+    padding: .5em;
+    border-bottom: solid .1em v.$color-bg;
+    text-align: left;
+    transition: background-color 1s; 
+
+    &:hover{
+      background-color: v.$color-bg;
+      transition: background-color .2s; 
+    }
+
+  }
+
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: v.$color-primary;
+  text-align: left;
+}
